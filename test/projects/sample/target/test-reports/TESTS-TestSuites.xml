@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="jbarmash-T520" id="0" name="BookTests" package="sample" tests="2" time="0.511" timestamp="2011-10-01T10:46:21">
+      <properties />
+
+      <testcase classname="sample.BookTests" name="testColumns" time="0.477" />
+
+      <testcase classname="sample.BookTests" name="testCells" time="0.023" />
+
+      <system-out><![CDATA[--Output from testColumns--
+[[title:How to Win Friends and Influence People, author:Dale Carnegie, numSold:10.0], [title:Oliver Twist, author:Charles Dickens, numSold:1], [title:War and Peace, author:Leo Tolstoy, numSold:5.0]]
+--Output from testCells--
+[title:Romeo & Juliet, author:Shakespeare, numSold:300.0, dateIssued:2009-01-02, dateIssuedError:2006-08-18]
+dateIssuedError: class org.joda.time.LocalDate
+dateIssued: class org.joda.time.LocalDate
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testColumns--
+--Output from testCells--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="jbarmash-T520" id="1" name="BookSpec" package="sample" tests="3" time="0.159" timestamp="2011-10-01T10:46:22">
+      <properties />
+
+      <testcase classname="sample.BookSpec" name="Check Error Reporter" time="0.061" />
+
+      <testcase classname="sample.BookSpec" name="Load Data From Columns" time="0.081" />
+
+      <testcase classname="sample.BookSpec" name="Load Data From Cells" time="0.011" />
+
+      <system-out><![CDATA[--Output from Check Error Reporter--
+--Output from Load Data From Columns--
+--Output from Load Data From Cells--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Check Error Reporter--
+--Output from Load Data From Columns--
+--Output from Load Data From Cells--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

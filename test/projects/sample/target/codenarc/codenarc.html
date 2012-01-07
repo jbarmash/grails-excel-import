@@ -1,0 +1,120 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" href="default.css" type="text/css">
+</head>
+<body>
+<a name="top"></a>
+<div class="header">
+<h1>
+<img src="logo.gif" width="44" height="37"></h1>
+</div>
+<div class="rule"></div>
+<div class="summary">
+<div class="first">
+<dl>
+<dt>Generated</dt>
+<dd>Oct 1, 2011 6:49:56 AM</dd>
+</dl>
+<dl>
+<dt>Tool</dt>
+<dd>
+<a href="http://www.codenarc.org">CodeNarc</a>
+</dd>
+</dl>
+<dl>
+<dt>Version</dt>
+<dd>0.15</dd>
+</dl>
+<dl>
+<dt>Sources</dt>
+<dl></dl>
+</dl>
+</div>
+<div class="last">
+<ul>
+<li>
+<strong>3</strong><span>total files</span>
+</li>
+<li>
+<strong>2</strong><span>file violations</span>
+</li>
+<li>
+<strong>0</strong><span>priority 1</span>
+</li>
+<li>
+<strong>2</strong><span>priority 2</span>
+</li>
+<li>
+<strong>1</strong><span>priority 3</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="rule"></div>
+<h2>Files</h2>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<th>Name</th><th>Violations</th>
+</tr>
+<tr>
+<td><a href="#f-Book.groovy">grails-app/domain/sample/Book.groovy</a></td><td>2</td>
+</tr>
+<tr>
+<td><a href="#f-BookExcelImporter.groovy">src/groovy/sample/BookExcelImporter.groovy</a></td><td>1</td>
+</tr>
+</table>
+<div class="rule"></div>
+<a name="f-Book.groovy"></a>
+<h3>
+            File
+            Book.groovy</h3>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<th>Priority</th><th>Rule</th><th>Violation Description</th><th>Line</th><th>Source</th>
+</tr>
+<tr>
+<td>2</td><td><a href="#r-GrailsDomainHasEquals">GrailsDomainHasEquals</a></td><td>The domain class sample.Book should define an equals(Object) method</td><td>6</td><td><code>class Book {</code></td>
+</tr>
+<tr>
+<td>2</td><td><a href="#r-GrailsDomainHasToString">GrailsDomainHasToString</a></td><td>The domain class sample.Book should define a toString() method</td><td>6</td><td><code>class Book {</code></td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<p></p>
+<p></p>
+<a name="f-BookExcelImporter.groovy"></a>
+<h3>
+            File
+            BookExcelImporter.groovy</h3>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<th>Priority</th><th>Rule</th><th>Violation Description</th><th>Line</th><th>Source</th>
+</tr>
+<tr>
+<td>3</td><td><a href="#r-ImportFromSamePackage">ImportFromSamePackage</a></td><td></td><td>6</td><td><code>import sample.*</code></td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<p></p>
+<p></p>
+<div class="rule"></div>
+<h2>Rules</h2>
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<th>Name</th><th>Description</th><th>Violations</th>
+</tr>
+<tr>
+<td><a name="r-GrailsDomainHasEquals"></a>GrailsDomainHasEquals</td><td>Checks that Grails domain classes redefine equals().</td><td>1</td>
+</tr>
+<tr>
+<td><a name="r-GrailsDomainHasToString"></a>GrailsDomainHasToString</td><td>Checks that Grails domain classes redefine toString()</td><td>1</td>
+</tr>
+<tr>
+<td><a name="r-ImportFromSamePackage"></a>ImportFromSamePackage</td><td>An import of a class that is within the same package is unnecessary.</td><td>1</td>
+</tr>
+</table>
+<div class="rule"></div>
+</body>
+</html>
