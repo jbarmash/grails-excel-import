@@ -1,9 +1,0 @@
-Testsuite: sample.BookSpec
-Tests run: 0, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
-
-Testcase: sample.BookSpec took 0 sec
-	Caused an ERROR
-Cannot get property 'mainContext' on null object
-java.lang.NullPointerException: Cannot get property 'mainContext' on null object
-	at grails.plugin.spock.IntegrationSpec.$spock_initializeSharedFields(IntegrationSpec.groovy)
-
