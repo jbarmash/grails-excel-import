@@ -10,11 +10,7 @@ import org.apache.poi.ss.usermodel.*
  */
 public abstract class AbstractExcelImporter extends imexporter.AbstractImexporter {
 
-	static def getExcelImportService() {
-    		def ctx = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext;
-    		return ctx.getBean("excelImportService"); 
-	} 
-
+	
 
 	@Deprecated
 	InputStream inStr = null
@@ -26,8 +22,7 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 
 	@Deprecated
 	public AbstractExcelImporter(String fileName) {
-		inStr = new FileInputStream(fileName)
-		this.read(inStr)
+		this.read(fileName)
 	}
 
 	@Deprecated
@@ -38,6 +33,14 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 
 	public AbstractExcelImporter() {
 	}
+
+	@Override
+	protected def read(String fileName) {
+		inStr = new FileInputStream(fileName)
+		this.read(inStr)
+	}
+
+
 
 	@Override
 	protected def read(InputStream inp) {
@@ -57,17 +60,7 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 		return this
 	}
 
-	def copyFromCsv(csvFormat) {
-		def currentSheet = workbook.getSheet('Sheet1')
-		csvFormat.tokensList.eachWithIndex {tokens, rowIndex ->
-			def row = currentSheet.getRow(rowIndex) ?: currentSheet.createRow(rowIndex)
-			tokens.eachWithIndex {value, colIndex ->
-				excelImportService.setCellValueByColIndex(value, row, colIndex)
-			}
-		}
-		return this
-	}
-
+	
 
 	def evaluateAllFormulaCells() {
 		for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
