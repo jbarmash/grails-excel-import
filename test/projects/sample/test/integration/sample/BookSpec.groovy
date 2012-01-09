@@ -4,50 +4,31 @@ import sample.*
 import grails.test.*
 import grails.plugin.spock.*
 import org.grails.plugins.excelimport.*
+import spock.lang.Specification
+import grails.plugin.spock.IntegrationSpec
 
+class BookSpec extends IntegrationSpec { 
 
-/*
-	void testCells() {
-		def singleBook = importer.getOneMoreBookParams()
-		System.out.println "$singleBook"
-		assertEquals singleBook.title, 'Romeo & Juliet'
-		assertEquals singleBook.author, 'Shakespeare'
-		assertNotNull singleBook.dateIssued 
-		assertNotNull singleBook.dateIssuedError
-		System.out.println "dateIssuedError: ${singleBook.dateIssuedError.class}"
-		System.out.println "dateIssued: ${singleBook.dateIssued.class}"
-	}
-
-*/
-
-
-class BookSpec extends UnitSpec { 
-
-	BookExcelImporter importer 
-	def newBook = null
+	def bookImporter 
 
 	def setup() {
-		mockDomain(Book)
-		String fileName = "./test-data/books.xls"
-		importer = new BookExcelImporter(fileName);
+		bookImporter.read( "./test-data/books.xls" );
 	}
 
 	def "Check Error Reporter"() { 
 		when:   
-			def booksMapList = importer.getBooks();
+			def booksMapList = bookImporter.getBooks();
 			//println booksMapList
-
 		then: 
-	
 			//println "CELL REPORTER ${importer.cellReporter.messagesBySeverityLevel}"
-			importer.cellReporter.messagesBySeverityLevel?.size()==3
-			importer.cellReporter.messagesBySeverityLevel[ImportSeverityLevelEnum.Error].isEmpty() == false
+			bookImporter.cellReporter.messagesBySeverityLevel?.size()==3
+			bookImporter.cellReporter.messagesBySeverityLevel[ImportSeverityLevelEnum.Error].isEmpty() == false
 	} 
 
 
 	def "Load Data From Columns"() { 
 		when:   
-			def booksMapList = importer.getBooks();
+			def booksMapList = bookImporter.getBooks();
 			//println booksMapList
 		and:  "Bind Imported Excel Data To Book Object"
 			booksMapList.each { Map bookParams ->
@@ -60,7 +41,7 @@ class BookSpec extends UnitSpec {
 			}
 
 		then: 
-			Book.count() == 3	
+			//Book.count() == 3	
 			Book.findByAuthorAndTitle (author, title)?.numSold ==quantity
 
 		where:  
@@ -72,22 +53,20 @@ class BookSpec extends UnitSpec {
 	} 
 
 
-	
-
 /*
 	pcc = pcc ?: NoopImportCellCollector.NoopInstance
 */
 
 	def "Load Data From Cells"() { 
 		when: 
-			def singleBook = importer.getOneMoreBookParams()
+			def singleBook = bookImporter.getOneMoreBookParams()
 			//System.out.println "$singleBook"
 			//System.out.println "dateIssuedError: ${singleBook.dateIssuedError.class}"
 			//System.out.println "dateIssued: ${singleBook.dateIssued.class}"
 		then: 
 			singleBook.title == 'Romeo & Juliet'
 			singleBook.author == 'Shakespeare'
-			singleBook.dateIssued !=null
+			singleBook.dateIssued != null
 			singleBook.dateIssuedError != null
 	}
 

@@ -5,14 +5,11 @@ import org.grails.plugins.excelimport.*
 import org.grails.plugins.excelimport.ExcelImportService
 import sample.*
 
-class BookExcelImporter extends AbstractExcelImporter {
+class BookExcelImporter extends AbstractExcelImporter  {
 
 	def static cellReporter = new DefaultImportCellCollector()
 
-
-	def getExcelImportService() {
-		ExcelImportService.getService()
-	}
+	def excelImportService
 
 	static Map configuratiomMap = [
 			dateIssued: ([expectedType: DateType, defaultValue: null]),
@@ -114,6 +111,19 @@ class BookExcelImporter extends AbstractExcelImporter {
 			return excelExporter
 		}
 	}
+
+
+def copyFromCsv(csvFormat) {
+		def currentSheet = workbook.getSheet('Sheet1')
+		csvFormat.tokensList.eachWithIndex {tokens, rowIndex ->
+			def row = currentSheet.getRow(rowIndex) ?: currentSheet.createRow(rowIndex)
+			tokens.eachWithIndex {value, colIndex ->
+				excelImportService.setCellValueByColIndex(value, row, colIndex)
+			}
+		}
+		return this
+	}
+
 
 }
 
