@@ -1,16 +1,9 @@
 Testsuite: sample.BookSpec
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.159 sec
-------------- Standard Output ---------------
---Output from Check Error Reporter--
---Output from Load Data From Columns--
---Output from Load Data From Cells--
-------------- ---------------- ---------------
-------------- Standard Error -----------------
---Output from Check Error Reporter--
---Output from Load Data From Columns--
---Output from Load Data From Cells--
-------------- ---------------- ---------------
+Tests run: 0, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
 
-Testcase: Check Error Reporter took 0.061 sec
-Testcase: Load Data From Columns took 0.081 sec
-Testcase: Load Data From Cells took 0.011 sec
+Testcase: sample.BookSpec took 0 sec
+	Caused an ERROR
+Cannot get property 'mainContext' on null object
+java.lang.NullPointerException: Cannot get property 'mainContext' on null object
+	at grails.plugin.spock.IntegrationSpec.$spock_initializeSharedFields(IntegrationSpec.groovy)
+

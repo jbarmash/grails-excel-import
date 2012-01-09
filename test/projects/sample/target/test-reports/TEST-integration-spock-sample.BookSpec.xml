@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="jbarmash-T520" name="sample.BookSpec" tests="3" time="0.159" timestamp="2011-10-01T10:46:22">
+<testsuite errors="0" failures="0" hostname="jbarmash-T520" name="sample.BookSpec" tests="0" time="0.011" timestamp="2012-01-09T03:24:13">
   <properties />
-  <testcase classname="sample.BookSpec" name="Check Error Reporter" time="0.061" />
-  <testcase classname="sample.BookSpec" name="Load Data From Columns" time="0.081" />
-  <testcase classname="sample.BookSpec" name="Load Data From Cells" time="0.011" />
-  <system-out><![CDATA[--Output from Check Error Reporter--
---Output from Load Data From Columns--
---Output from Load Data From Cells--
-]]></system-out>
-  <system-err><![CDATA[--Output from Check Error Reporter--
---Output from Load Data From Columns--
---Output from Load Data From Cells--
-]]></system-err>
+  <testcase classname="junit.framework.JUnit4TestCaseFacade" name="sample.BookSpec" time="0.0">
+    <error message="Cannot get property &apos;mainContext&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;mainContext&apos; on null object
+	at grails.plugin.spock.IntegrationSpec.$spock_initializeSharedFields(IntegrationSpec.groovy)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

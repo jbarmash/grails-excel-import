@@ -1,5 +1,5 @@
 Testsuite: sample.BookTests
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.511 sec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.59 sec
 ------------- Standard Output ---------------
 --Output from testColumns--
 [[title:How to Win Friends and Influence People, author:Dale Carnegie, numSold:10.0], [title:Oliver Twist, author:Charles Dickens, numSold:1], [title:War and Peace, author:Leo Tolstoy, numSold:5.0]]
@@ -13,5 +13,5 @@ dateIssued: class org.joda.time.LocalDate
 --Output from testCells--
 ------------- ---------------- ---------------
 
-Testcase: testColumns took 0.478 sec
-Testcase: testCells took 0.023 sec
+Testcase: testColumns took 0.55 sec
+Testcase: testCells took 0.025 sec

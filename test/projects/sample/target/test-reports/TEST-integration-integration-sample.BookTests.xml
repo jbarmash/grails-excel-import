@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="jbarmash-T520" name="sample.BookTests" tests="2" time="0.511" timestamp="2011-10-01T10:46:21">
+<testsuite errors="0" failures="0" hostname="jbarmash-T520" name="sample.BookTests" tests="2" time="0.59" timestamp="2012-01-09T03:24:13">
   <properties />
-  <testcase classname="sample.BookTests" name="testColumns" time="0.477" />
-  <testcase classname="sample.BookTests" name="testCells" time="0.023" />
+  <testcase classname="sample.BookTests" name="testColumns" time="0.55" />
+  <testcase classname="sample.BookTests" name="testCells" time="0.025" />
   <system-out><![CDATA[--Output from testColumns--
 [[title:How to Win Friends and Influence People, author:Dale Carnegie, numSold:10.0], [title:Oliver Twist, author:Charles Dickens, numSold:1], [title:War and Peace, author:Leo Tolstoy, numSold:5.0]]
 --Output from testCells--

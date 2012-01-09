@@ -1,86 +1,230 @@
-<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
 <head>
-<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Unit Test Results: sample.BookTests</title>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+                    Test - BookTests</title>
+<link rel="shortcut icon" href="http://grails.org/images/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
-<script type="text/javascript" language="JavaScript">
-        var TestCases = new Array();
-        var cur;
-        
-    cur = TestCases['sample.BookTests'] = new Array();
-    </script><script type="text/javascript" language="JavaScript">
-        function displayProperties (name) {
-          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
-          var doc = win.document;
-          doc.open();
-          doc.write("<html><head><title>Properties of " + name + "</title>");
-          doc.write("<style type=\"text/css\">");
-          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
-          doc.write("table tr td, table tr th { font-size: 68%; }");
-          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
-          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
-          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
-          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
-          doc.write("</style>");
-          doc.write("</head><body>");
-          doc.write("<h3>Properties of " + name + "</h3>");
-          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
-          doc.write("<table class='properties'>");
-          doc.write("<tr><th>Name</th><th>Value</th></tr>");
-          for (prop in TestCases[name]) {
-            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
-          }
-          doc.write("</table>");
-          doc.write("</body></html>");
-          doc.close();
-          win.focus();
-        }
-      
-      </script>
 </head>
 <body>
-<h1>Unit Test Results.</h1>
-<table width="100%">
-<tr>
-<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
-</tr>
-</table>
-<hr size="1">
-<h3>Class sample.BookTests</h3>
-<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
-<tr valign="top">
-<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
-</tr>
-<tr valign="top" class="Pass">
-<td><a title="Display all tests" href="0_BookTests.html">BookTests</a></td><td><a title="Display all tests" href="0_BookTests.html">2</a></td><td>0</td><td>0</td><td>0.511</td><td>2011-10-01T10:46:21</td><td>jbarmash-T520</td>
-</tr>
-</table>
-<h2>Tests</h2>
-<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
-<tr valign="top">
-<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testColumns"></a>testColumns</td><td>Success</td><td></td><td>0.477</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCells"></a>testCells</td><td>Success</td><td></td><td>0.023</td>
-</tr>
-</table>
-<div class="Properties">
-<a href="javascript:displayProperties('sample.BookTests');">
-                    Properties &raquo;
+<div class="container container_8" id="report">
+<div class="grid_6">
+<a title="Home" href="../index.html">
+<div class="grailslogo"></div>
+</a>
+<h1>BookTests</h1>
+<h2>Package: sample</h2>
+</div>
+<div class="grid_2">
+<nav id="navigationlinks">
+<p>
+<a href="../failed.html">
+                    Tests with failure and errors
                 </a>
+</p>
+<p>
+<a href="../index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="../all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
 </div>
-<div class="Properties">
-<a href="./0_BookTests-out.txt">
-                        System.out &raquo;
-                    </a>
+<div class="clear"></div>
+<div class="testsuite success">
+<div class="header">
+<h2>BookTests</h2>
+<h3>
+                        Executed
+                        2
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
 </div>
-<div class="Properties">
-<a href="./0_BookTests-err.txt">
-                        System.err &raquo;
-                    </a>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testColumns">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testColumns</b>
+</p>
+<p class="summary">Executed in 0.55 seconds.</p>
 </div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCells">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCells</b>
+</p>
+<p class="summary">Executed in 0.025 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testColumns--
+[[title:How to Win Friends and Influence People, author:Dale Carnegie, numSold:10.0], [title:Oliver Twist, author:Charles Dickens, numSold:1], [title:War and Peace, author:Leo Tolstoy, numSold:5.0]]
+--Output from testCells--
+[title:Romeo &amp; Juliet, author:Shakespeare, numSold:300.0, dateIssued:2009-01-02, dateIssuedError:2006-08-18]
+dateIssuedError: class org.joda.time.LocalDate
+dateIssued: class org.joda.time.LocalDate
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testColumns--
+--Output from testCells--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
 </body>
 </html>
