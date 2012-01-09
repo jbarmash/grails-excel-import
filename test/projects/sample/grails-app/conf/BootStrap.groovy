@@ -54,17 +54,15 @@ class BootStrap {
 
 
 	def testCsv(ctx) {
-        /*
 		println "==== testCsv"
 		BookExcelImporter.BookCsvImporter csvImporter = new BookExcelImporter.BookCsvImporter().readFromUrl("file:test-data/books.csv".toURL())
 
 		def booksMapList = csvImporter.getBooks()
 		println "booksMapList = ${booksMapList}"
 
-		BookExcelImporter excelExporter =  csvImporter.copyToExcel(new BookExcelImporter().readFromUrl("file:test-data/books-empty.xls".toURL()))
+		BookExcelImporter excelExporter =  csvImporter.copyToExcel(ctx.bookImporter.readFromUrl("file:test-data/books-empty.xls".toURL()))
 		String exportName = excelExporter.writeToFile(File.createTempFile('book-', ".xls").absolutePath)
 		println "exported to file = ${exportName}"
-        */
 		
 	}
 
