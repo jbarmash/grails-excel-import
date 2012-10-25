@@ -24,9 +24,9 @@ grails.project.dependency.resolution = {
     }
   dependencies {
     // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-    compile (group:'org.apache.poi', name:'poi', version:'3.7');
+    compile (group:'org.apache.poi', name:'poi', version:'3.8');
     //xlxs file support
-    compile (group:'org.apache.poi', name:'poi-ooxml', version:'3.7') {
+    compile (group:'org.apache.poi', name:'poi-ooxml', version:'3.8') {
       excludes 'xmlbeans'
     }
     //compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
