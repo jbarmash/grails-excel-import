@@ -1,5 +1,7 @@
 package org.grails.plugins.excelimport
 
+import grails.util.Holders
+
 import static org.grails.plugins.excelimport.ExpectedPropertyType.*
 import org.joda.time.LocalDate
 
@@ -10,7 +12,6 @@ import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.ss.usermodel.DateUtil
 import org.apache.poi.ss.usermodel.FormulaEvaluator
 import org.apache.poi.ss.usermodel.Workbook
-import org.codehaus.groovy.grails.commons.ApplicationHolder
 
 
 /**
@@ -20,10 +21,8 @@ import org.codehaus.groovy.grails.commons.ApplicationHolder
  * Time: 5:08:39 PM
  */
 public class ExcelImportService {
-
-    static scope = "prototype"
-    static transactional = false
-
+  static scope = "prototype"
+  static transactional = false
 
 	//PROPERTY_TYPE_* was inlined in HEAD
 	//not removing this old definitions for a while as there could be merge into another branch which still uses it
@@ -33,13 +32,11 @@ public class ExcelImportService {
 	static ExpectedPropertyType PROPERTY_TYPE_DATE_JAVA = DateJavaType
 	static ExpectedPropertyType PROPERTY_TYPE_DOUBLE = DoubleType
 
-
-       static getService() {
-    		def ctx = ApplicationHolder.application.mainContext;
-    		return ctx.getBean("excelImportService"); 
+	static getService() {
+	  def ctx = Holders.grailsApplication.mainContext
+	  return ctx.getBean("excelImportService")
 	} 
 
-	
 	/**
 	 * Looks through supplied index (columnIndex), and matches a siteID in that column, returning the row of the match
 	 */

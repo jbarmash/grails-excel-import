@@ -6,8 +6,6 @@ package imexporter
  * Date: 4/21/11 8:06 PM
  */
 public abstract class AbstractImexporter {
-
-
 	protected abstract def read(InputStream inp)
 
 	def readFromStream(inputStream) {
@@ -22,8 +20,6 @@ public abstract class AbstractImexporter {
 	def readFromUrl(URL url) {
 		readFromStream(url.openStream())
 	}
-
-
 
 	protected abstract def write(OutputStream out)
 
@@ -40,6 +36,4 @@ public abstract class AbstractImexporter {
 	def writeToByteArray() {
 		writeToStream(new ByteArrayOutputStream()).toByteArray()
 	}
-
-
 }

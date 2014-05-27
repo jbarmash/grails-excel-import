@@ -9,9 +9,6 @@ import org.apache.poi.ss.usermodel.*
  * Time: 6:30:17 PM
  */
 public abstract class AbstractExcelImporter extends imexporter.AbstractImexporter {
-
-	
-
 	@Deprecated
 	InputStream inStr = null
 
@@ -30,17 +27,13 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 		inStr.close()
 	}
 
-
 	public AbstractExcelImporter() {
 	}
 
-	@Override
 	protected def read(String fileName) {
 		inStr = new FileInputStream(fileName)
 		this.read(inStr)
 	}
-
-
 
 	@Override
 	protected def read(InputStream inp) {
@@ -59,8 +52,6 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 		workbook.createSheet('Sheet1')
 		return this
 	}
-
-	
 
 	def evaluateAllFormulaCells() {
 		for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
