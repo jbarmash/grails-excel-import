@@ -12,3 +12,4 @@
     <classpathentry kind="con" path="com.springsource.sts.grails.core.CLASSPATH_CONTAINER"/>
     <classpathentry kind="output" path="web-app/WEB-INF/classes"/>
 </classpath>
+
