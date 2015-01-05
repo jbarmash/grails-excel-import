@@ -1,3 +1,3 @@
 /target/
-./*.zip
-./*.zip.*
+*.zip
+*.zip.*

@@ -28,6 +28,9 @@ grails.project.dependency.resolution = {
         compile(group: 'org.apache.poi', name: 'poi-ooxml', version: '3.11') {
             excludes 'xmlbeans'
         }
+        compile(group: 'org.apache.poi', name: 'ooxml-schemas', version: '1.1') {
+            excludes 'xmlbeans'
+        }
         compile(group:'joda-time',name:'joda-time',version:'2.6')
         
         //compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
