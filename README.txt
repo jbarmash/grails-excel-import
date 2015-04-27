@@ -5,7 +5,7 @@ It's useful for either bootstrapping data, or when you want to allow your users 
 Usage:  
 
 The core of the plugin is a utilities class, which contains a number of useful methods for dealing with Excel.    
-   org.grails.plugins.excelimport.ExcelImportUtils 
+   org.grails.plugins.excelimport.ExcelImportService 
 
 There is also an AbstractExcelImporter, which is a class you can extend - it opens and stores the workbook reference.  
 
@@ -28,20 +28,26 @@ static Map CONFIG_BOOK_COLUMN_MAP = [
           sheet:'Sheet1', 
 			 startRow: 2,
           columnMap:  [
-                  'B':'title',
-                  'C':'author',
+                  'B':'author',
+                  'C':'title',
                   'D':'numSold',
           ]
   ]
+
+//Get the workbook instance for XLS file
+HSSFWorkbook workbook = new HSSFWorkbook(file);
+//Or
+//Get the workbook instance for XLS file
+XSSFWorkbook workbook = new XSSFWorkbook (file);
 
 List bookList = ExcelImportUtils.convertColumnMapConfigManyRows(workbook, CONFIG_BOOK_COLUMN_MAP)
 
 And you'll get back a list of maps:
 
 assert bookParamsList, [
-  [AuthorName:'Shakespeare', BookName:'King Lear', NumSold:1000],
-  [AuthorName:'Shakespeare', BookName:'Hamlet', NumSold:10000],
-  [AuthorName:'Tolstoy', BookName:'War and Peace', NumSold:200],
+  [author:'Shakespeare', title:'King Lear', numSold:1000],
+  [author:'Shakespeare', title:'Hamlet', numSold:10000],
+  [author:'Tolstoy', title:'War and Peace', numSold:200],
 ]
 
 You can then pass the maps to constructors to create a bunch of objects, i.e. bookParamsList
