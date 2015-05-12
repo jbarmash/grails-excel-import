@@ -1,3 +1,6 @@
 /target/
 *.zip
 *.zip.*
+/build
+/.nb-gradle
+/.gradle
