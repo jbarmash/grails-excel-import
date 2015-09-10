@@ -42,5 +42,7 @@ grails.project.dependency.resolution = {
 		compile ':hibernate:3.6.10.15' {
 			export = false
 		}
+
+		compile ':joda-time:1.5'
 	}
 }
