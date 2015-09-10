@@ -43,6 +43,6 @@ grails.project.dependency.resolution = {
 			export = false
 		}
 
-		compile ':joda-time:1.3.1'
+		compile ':joda-time:1.5'
 	}
 }
