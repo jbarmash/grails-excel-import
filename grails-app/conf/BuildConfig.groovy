@@ -39,7 +39,7 @@ grails.project.dependency.resolution = {
 		build ":release:3.0.1"
 		build ":tomcat:7.0.53"
 
-		compile ':hibernate:3.6.10.15' {
+		compile(':hibernate:3.6.10.15') {
 			export = false
 		}
 	}
