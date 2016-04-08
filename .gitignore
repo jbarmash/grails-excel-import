@@ -1,0 +1,14 @@
+.classpath
+.project
+.idea/**
+.gradle/**
+.build/**
+build/**
+.settings/*
+plugins/**
+/plugin.xml
+*.iml
+stacktrace.log
+target/**
+target-eclipse/**
+*.zip*

@@ -26,19 +26,18 @@ grails.project.dependency.resolution = {
 
 	dependencies {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-		compile(group: 'org.apache.poi', name: 'poi', version: '3.8');
+
 		//xlxs file support
 		compile(group: 'org.apache.poi', name: 'poi-ooxml', version: '3.8') {
 			excludes 'xmlbeans'
 		}
 		//compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
-		//compile group:'org.apache.poi', name:'poi-scratchpad', version:'3.7' //ppt, word, visio, outlook support
+		//compile group:'org.apaccompile(group: 'org.apache.poi', name: 'poi', version: '3.8');he.poi', name:'poi-scratchpad', version:'3.7' //ppt, word, visio, outlook support
 	}
 
 	plugins {
-		build ":release:3.0.1"
-		build ":tomcat:7.0.52.1"
 
-		runtime ":hibernate:3.6.10.14"
+
+
 	}
 }
