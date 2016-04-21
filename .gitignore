@@ -6,6 +6,7 @@
 build/**
 .settings/*
 plugins/**
+build.gradle.save
 /plugin.xml
 *.iml
 stacktrace.log
