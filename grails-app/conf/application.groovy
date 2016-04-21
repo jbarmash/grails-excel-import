@@ -16,7 +16,7 @@ info{
 spring {
     groovy{
         template {
-            "check-template-location" = false
+            checkTemplateLocation = false
         }
     }
 }
