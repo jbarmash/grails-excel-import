@@ -1,0 +1,32 @@
+body { font: normal 13px helvetica, arial, sanserif; background-color:#fff; color:#000; line-height: 1.4em; margin: 20px 10px; }
+h1 { font-size: 30px; font-weight: bold; color: #495961; letter-spacing: -1px; text-shadow: 1px 1px 0 #fff; margin: 0; height: 54px; line-height: 54px; }
+h2 { font-weight:bold; font-size: 18px; margin: 0 0 5px 0; }
+h3 { font-size:14px; font-weight:bold; margin: 0; }
+dl { margin: 5px 0 10px 0; display: block; }
+dl dt { margin: 0; float: left; width: 115px; color: #999; }
+dl dd { margin: 0; }
+ul li { list-style: none; float: left; margin-right: 30px; }
+ul li strong { color: #000; display: block; font-size: 36px; font-weight: bold; margin-bottom: 0.1em; }
+ul li span { display: block; color: #999; font-size: 11px; line-height: 13px; }
+a { color: #4183c4; }
+table, th, td { border: none }
+table { border: 1px solid #d8d8d8; border-bottom: none; margin-bottom: 1em; }
+th, td { font-size: 90%; text-align: left; vertical-align: top; padding: .5em .3em; border-bottom: 1px solid #d8d8d8; }
+th {  font-weight: normal; background-color: #eaeaea; color: #999; }
+td { background: #f8f8f8 url('row_bg.png') 0 100% repeat-x; color: #484848; }
+
+h1 img { padding: 2px; border: 1px solid #ddd; vertical-align: middle; position: relative; margin-right: 5px; }
+
+#summary_stats li { width: 65px; }
+
+.rule { clear: both; border-bottom: 1px solid #ddd; margin: 15px 0; height: 0; overflow: hidden; }
+.first { float: left; width: 50%; }
+.last { float: right; width: 50%; }
+.number { text-align: right; }
+.class_summary table { border-color: #bedce7; border-left: none; border-bottom: none; background: #EAF2F5 url(bg_gradient.gif) 0 100% repeat-x;
+    margin-bottom: 0.5em; }
+.class_summary td { background: transparent; border-left: 1px solid #bedce7; border-bottom-color: #bedce7; width: 25%; }
+.class_summary dl { font-size: 11px; margin: 5px 0 0 0; }
+.class_summary dt { width: 70px; }
+.class_summary p strong { font-size: 16px; font-weight: bold; }
+.class_summary p { margin: 4px 0 0 0; }
